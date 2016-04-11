@@ -10,6 +10,13 @@ router.route('/')
         });
     });
 
+router.route('/count')
+    .get(function(req, res) {
+        Party.count({}, function( err, count){
+            res.send(count);
+        });
+    });
+
 router.route('/add')
     .post(function(req, res) {
         var newParty = new Party();
