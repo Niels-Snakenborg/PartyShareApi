@@ -17,7 +17,9 @@ router.route('/add')
         newParty.description = req.body.description;
         newParty.location = req.body.location;
         newParty.start_date = req.body.start_date;
+        newParty.start_time = req.body.start_time;
         newParty.end_date = req.body.end_date;
+        newParty.end_time = req.body.end_time;
         newParty.ticket_price = req.body.ticket_price;
         newParty.likes = req.body.likes;
 
