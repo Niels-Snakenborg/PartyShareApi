@@ -13,7 +13,7 @@ router.route('/')
 router.route('/count')
     .get(function(req, res) {
         Party.count({}, function( err, count){
-            res.send(count);
+            res.json(count);
         });
     });
 
